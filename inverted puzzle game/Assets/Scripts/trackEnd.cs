@@ -18,7 +18,8 @@ public class trackEnd : MonoBehaviour
         if (wizardSucess && hatSucess) 
         {
             //switch to same structure scene but with obstacles
-            SceneManager.LoadScene("main2", LoadSceneMode.Single);
+            Debug.Log("finished puzzle");
+            SceneManager.LoadScene("level1b", LoadSceneMode.Single);
         }
     }
 }

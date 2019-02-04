@@ -53,7 +53,7 @@ public class wizardHatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
             Debug.Log("hit spike");
-            SceneManager.LoadScene("main2", LoadSceneMode.Single);
+            SceneManager.LoadScene("level1b", LoadSceneMode.Single);
         }
     }
 }
