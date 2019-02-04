@@ -8,6 +8,7 @@ public class trackEnd : MonoBehaviour
     public static bool wizardSucess = false;
     public static bool hatSucess = false;
 
+    public string nextLevel;
     
     public GameObject wizardPlayer;
     public GameObject hatPlayer;
@@ -19,7 +20,7 @@ public class trackEnd : MonoBehaviour
         {
             //switch to same structure scene but with obstacles
             Debug.Log("finished puzzle");
-            SceneManager.LoadScene("level1b", LoadSceneMode.Single);
+            SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
         }
     }
 }
