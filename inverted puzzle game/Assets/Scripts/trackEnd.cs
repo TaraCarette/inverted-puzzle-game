@@ -1,33 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class trackEnd : MonoBehaviour
 {
     public static bool wizardSucess = false;
     public static bool hatSucess = false;
 
-    private bool done = false;
-
     
-    public GameObject wizardHatPlayer;
     public GameObject wizardPlayer;
     public GameObject hatPlayer;
-    public GameObject endDoor;
-    public GameObject spike;
     
     // Update is called once per frame
     void Update()
     {
-        if (wizardSucess && hatSucess && !done) 
+        if (wizardSucess && hatSucess) 
         {
-            Debug.Log("Now!!!!!!!!!");
-            Destroy(wizardPlayer);
-            Destroy(hatPlayer);
-            wizardHatPlayer.SetActive(true);
-            endDoor.SetActive(true);
-            spike.SetActive(true);
-            done = true;
+            //switch to same structure scene but with obstacles
+            SceneManager.LoadScene("main2", LoadSceneMode.Single);
         }
     }
 }

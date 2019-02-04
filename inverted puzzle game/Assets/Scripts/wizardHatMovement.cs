@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class wizardHatMovement : MonoBehaviour
 {
     public float speed;
-    // public Transform player;
-
 
     private Rigidbody2D rb2d;
 
@@ -55,8 +53,7 @@ public class wizardHatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
             Debug.Log("hit spike");
-            transform.position = new Vector3(0, 0, 0);
-
+            SceneManager.LoadScene("main2", LoadSceneMode.Single);
         }
     }
 }
