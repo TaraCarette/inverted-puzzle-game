@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class wizardHatMovement : MonoBehaviour
 {
     public float speed;
+    // public Transform player;
 
 
     private Rigidbody2D rb2d;
@@ -39,5 +41,22 @@ public class wizardHatMovement : MonoBehaviour
         }
 
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Door"))
+        {
+            Debug.Log("reached end");
+            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+
+        }
+
+        if (other.gameObject.CompareTag("Spike"))
+        {
+            Debug.Log("hit spike");
+            transform.position = new Vector3(0, 0, 0);
+
+        }
     }
 }

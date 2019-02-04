@@ -13,7 +13,8 @@ public class trackEnd : MonoBehaviour
     public GameObject wizardHatPlayer;
     public GameObject wizardPlayer;
     public GameObject hatPlayer;
-
+    public GameObject endDoor;
+    public GameObject spike;
     
     // Update is called once per frame
     void Update()
@@ -24,6 +25,8 @@ public class trackEnd : MonoBehaviour
             Destroy(wizardPlayer);
             Destroy(hatPlayer);
             wizardHatPlayer.SetActive(true);
+            endDoor.SetActive(true);
+            spike.SetActive(true);
             done = true;
         }
     }

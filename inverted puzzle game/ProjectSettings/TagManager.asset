@@ -6,6 +6,8 @@ TagManager:
   tags:
   - WizardEnd
   - HatEnd
+  - Door
+  - Spike
   layers:
   - Default
   - TransparentFX
@@ -17,8 +19,8 @@ TagManager:
   - 
   - background
   - goal
+  - obstacle
   - player
-  - 
   - 
   - 
   - 
@@ -48,6 +50,9 @@ TagManager:
     locked: 0
   - name: goal
     uniqueID: 2148834989
+    locked: 0
+  - name: Obstacle
+    uniqueID: 2995099911
     locked: 0
   - name: player
     uniqueID: 3001231621
