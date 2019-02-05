@@ -8,10 +8,18 @@ public class trackEnd : MonoBehaviour
     public static bool wizardSucess = false;
     public static bool hatSucess = false;
 
-    public string nextLevel;
+    private string currentScene;
+    private string nextLevel;
     
     public GameObject wizardPlayer;
     public GameObject hatPlayer;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentScene =  SceneManager.GetActiveScene().name;
+        nextLevel = currentScene.Replace("a", "b");
+    }
     
     // Update is called once per frame
     void Update()
