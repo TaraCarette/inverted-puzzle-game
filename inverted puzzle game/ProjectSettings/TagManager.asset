@@ -21,7 +21,7 @@ TagManager:
   - goal
   - obstacle
   - player
-  - 
+  - wall
   - 
   - 
   - 
@@ -51,9 +51,12 @@ TagManager:
   - name: goal
     uniqueID: 2148834989
     locked: 0
+  - name: player
+    uniqueID: 3001231621
+    locked: 0
   - name: Obstacle
     uniqueID: 2995099911
     locked: 0
-  - name: player
-    uniqueID: 3001231621
+  - name: wall
+    uniqueID: 2167968561
     locked: 0
