@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8594136539247438412}
   - component: {fileID: 4272020404371827377}
   - component: {fileID: 3249698105290903517}
+  - component: {fileID: 6729667958735530185}
   m_Layer: 10
   m_Name: hammer
   m_TagString: Spike
@@ -69,7 +70,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1299867385
+<<<<<<< HEAD
   m_SortingLayer: 3
+=======
+  m_SortingLayer: 4
+>>>>>>> 5a58214a1383eede0cddd5cbd86b342a65a1e6be
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 32808c60d7243e54ca25b476dc12ca14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -142,6 +147,32 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+  m_Offset: {x: -0.10059732, y: 0.81}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.6666667, y: 2}
+    newSize: {x: 8, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.56, y: 0.03}
+  m_EdgeRadius: 0
+--- !u!61 &6729667958735530185
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3775829187588796858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: -0.10059732, y: 0.7684171}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,5 +184,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.70502245, y: 0.14908814}
+  m_Size: {x: 0.68, y: 0.12}
   m_EdgeRadius: 0
