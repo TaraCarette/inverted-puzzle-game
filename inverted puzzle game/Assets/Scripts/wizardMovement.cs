@@ -17,6 +17,14 @@ public class wizardMovement : MonoBehaviour
         sceneName = SceneManager.GetActiveScene().name;
     }
 
+    // void FixedUpdate()
+    // {
+    //     float x = Input.GetAxisRaw("Horizontal");
+    //     float z = Input.GetAxisRaw("Vertical");
+    //     rb2d.position = z * transform.forward * Time.deltaTime * speed;
+    //     rb2d.position = x * transform.right * Time.deltaTime * speed;
+    // }
+
     // Update is called once per frame
     void Update()
     {
