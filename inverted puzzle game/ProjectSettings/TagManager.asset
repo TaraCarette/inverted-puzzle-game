@@ -22,7 +22,7 @@ TagManager:
   - obstacle
   - player
   - wall
-  - 
+  - wall clean
   - 
   - 
   - 
@@ -48,8 +48,8 @@ TagManager:
   - name: background
     uniqueID: 151506927
     locked: 0
-  - name: player
-    uniqueID: 3001231621
+  - name: goal
+    uniqueID: 2148834989
     locked: 0
   - name: Obstacle
     uniqueID: 2995099911
@@ -57,6 +57,9 @@ TagManager:
   - name: wall
     uniqueID: 2167968561
     locked: 0
-  - name: goal
-    uniqueID: 2148834989
+  - name: player
+    uniqueID: 3001231621
+    locked: 0
+  - name: wall clean
+    uniqueID: 1583162549
     locked: 0

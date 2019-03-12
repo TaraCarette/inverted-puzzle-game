@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3514927295077804366}
   - component: {fileID: 3514927295077804367}
-  - component: {fileID: 3514927295077804364}
+  - component: {fileID: 4250861580644848503}
   m_Layer: 9
   m_Name: goalHat
   m_TagString: HatEnd
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_SortingLayerID: -2146132307
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6edaec745e5606940a9f38217b7fe87b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0c8a305d2ef81246b588bb44cfc82f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3514927295077804364
-BoxCollider2D:
+--- !u!68 &4250861580644848503
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93,16 +93,11 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09, y: 0.06}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 3}
-    newSize: {x: 1.6, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.3, y: 1.25}
+  m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.121480346, y: -0.8960223}
+  - {x: -1.1072181, y: -0.8871205}
+  - {x: 0.1100062, y: 0.84543014}
+  - {x: 1.3319944, y: -0.898042}
+  - {x: 0.12217152, y: -0.8997155}
