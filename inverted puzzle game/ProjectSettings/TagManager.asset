@@ -8,6 +8,8 @@ TagManager:
   - HatEnd
   - Door
   - Spike
+  - isTile
+  - playerHat
   layers:
   - Default
   - TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   - player
   - wall
   - wall clean
-  - 
+  - glow
   - 
   - 
   - 
@@ -50,6 +52,9 @@ TagManager:
     locked: 0
   - name: goal
     uniqueID: 2148834989
+    locked: 0
+  - name: glow
+    uniqueID: 303940075
     locked: 0
   - name: Obstacle
     uniqueID: 2995099911
