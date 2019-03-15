@@ -28,6 +28,7 @@ public class trackEnd : MonoBehaviour
         {
             //switch to same structure scene but with obstacles
             Debug.Log("finished puzzle");
+            SceneManager.LoadScene(currentScene, LoadSceneMode.Single);
             SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
         }
     }

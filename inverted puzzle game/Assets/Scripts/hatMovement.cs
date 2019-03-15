@@ -10,11 +10,13 @@ public class hatMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private string sceneName;
 
+
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sceneName = SceneManager.GetActiveScene().name;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame

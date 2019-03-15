@@ -56,7 +56,7 @@ public class wizardHatMovement : MonoBehaviour
         {
             Debug.Log("hit spike");
             transform.position = new Vector3(0.0f, 0.0f, 0.0f);
-            // SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
     }
 }

@@ -15,6 +15,8 @@ public class wizardMovement : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         sceneName = SceneManager.GetActiveScene().name;
+        Time.timeScale = 1f;
+
     }
 
     // void FixedUpdate()
@@ -31,21 +33,25 @@ public class wizardMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow)) 
         {
             transform.Translate(new Vector3(0, speed, 0) * Time.deltaTime);
+            //Debug.Log("walk up");
         }
 
         if (Input.GetKey(KeyCode.DownArrow)) 
         {
             transform.Translate(new Vector3(0, -speed, 0) * Time.deltaTime);
+            //.Log("walk down");
         }
 
         if (Input.GetKey(KeyCode.RightArrow)) 
         {
             transform.Translate(new Vector3(speed, 0, 0) * Time.deltaTime);
+           // Debug.Log("walk right");
         }
 
         if (Input.GetKey(KeyCode.LeftArrow)) 
         {
             transform.Translate(new Vector3(-speed, 0, 0) * Time.deltaTime);
+           // Debug.Log("walk left");
         }
 
     }
