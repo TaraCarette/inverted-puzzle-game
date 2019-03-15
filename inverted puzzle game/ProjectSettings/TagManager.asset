@@ -50,9 +50,6 @@ TagManager:
   - name: background
     uniqueID: 151506927
     locked: 0
-  - name: goal
-    uniqueID: 2148834989
-    locked: 0
   - name: glow
     uniqueID: 303940075
     locked: 0
@@ -67,4 +64,7 @@ TagManager:
     locked: 0
   - name: wall clean
     uniqueID: 1583162549
+    locked: 0
+  - name: goal
+    uniqueID: 2148834989
     locked: 0
