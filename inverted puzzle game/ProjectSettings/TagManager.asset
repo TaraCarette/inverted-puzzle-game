@@ -59,11 +59,11 @@ TagManager:
   - name: wall
     uniqueID: 2167968561
     locked: 0
-  - name: player
-    uniqueID: 3001231621
-    locked: 0
   - name: wall clean
     uniqueID: 1583162549
+    locked: 0
+  - name: player
+    uniqueID: 3001231621
     locked: 0
   - name: goal
     uniqueID: 2148834989
