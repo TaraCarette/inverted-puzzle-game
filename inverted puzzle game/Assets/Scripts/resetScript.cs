@@ -62,6 +62,11 @@ public class resetScript : MonoBehaviour
 
     }
 
+    public void menu()
+    {
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
+
 
 
 }
