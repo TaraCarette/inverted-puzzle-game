@@ -17,6 +17,7 @@ public class resetScript : MonoBehaviour
         askResetUI.SetActive(false);
         curScene = SceneManager.GetActiveScene().name;
         preScene = curScene.Replace("b", "a");
+        Debug.Log(curScene);
     }
 
 
@@ -49,7 +50,7 @@ public class resetScript : MonoBehaviour
         askResetUI.SetActive(true);
         isPause = true;
         Time.timeScale = 0f;
-        Debug.Log("paused");
+        //Debug.Log("paused");
     }
 
     public void resetLevel()
