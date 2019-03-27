@@ -17,7 +17,7 @@ public class resetScript : MonoBehaviour
         askResetUI.SetActive(false);
         curScene = SceneManager.GetActiveScene().name;
         preScene = curScene.Replace("b", "a");
-        Debug.Log(curScene);
+        
     }
 
 
@@ -67,7 +67,6 @@ public class resetScript : MonoBehaviour
     {
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
-
 
 
 }

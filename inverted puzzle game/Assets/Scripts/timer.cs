@@ -33,7 +33,7 @@ public class timer : MonoBehaviour {
 
       if (timeLeft <= 0) {
         Debug.Log("out of time");
-        SceneManager.LoadScene(currentScene, LoadSceneMode.Single);
+        finishLevel.timeFail = true;
       }
     }
   }
