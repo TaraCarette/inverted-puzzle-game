@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 5342156259850798609}
   m_Layer: 11
   m_Name: wizardHat
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

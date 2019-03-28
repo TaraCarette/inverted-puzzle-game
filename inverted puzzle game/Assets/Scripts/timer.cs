@@ -21,7 +21,10 @@ public class timer : MonoBehaviour {
   }
 
   void Update () {
-    countdown.text = ("Time Left:" + timeLeft); //Showing the Score on the Canvas
+        
+            countdown.text = ("Time Left:" + timeLeft);
+        
+     //Showing the Score on the Canvas
   }
 
   //Simple Coroutine
