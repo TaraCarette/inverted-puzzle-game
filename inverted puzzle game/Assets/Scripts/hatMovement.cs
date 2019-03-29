@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class hatMovement : MonoBehaviour
 {
     public float speed;
+    public AudioClip hitObstacle;
+    public GameObject wizard;
 
     private Rigidbody2D rb2d;
     private string sceneName;
+    private AudioSource source;
+    private Vector3 originalPos;
+    private Vector3 wizardOriginalPos;
 
 
     // Start is called before the first frame update
@@ -17,6 +22,12 @@ public class hatMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         sceneName = SceneManager.GetActiveScene().name;
         Time.timeScale = 1f;
+
+        source = GetComponent<AudioSource>();
+        source.clip = hitObstacle;
+
+        originalPos = gameObject.transform.position;
+        wizardOriginalPos = wizard.transform.position;
     }
 
     // Update is called once per frame
@@ -50,7 +61,9 @@ public class hatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
             Debug.Log("hit spike");
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            source.Play();
+            gameObject.transform.position = originalPos;
+            wizard.transform.position = wizardOriginalPos;
         }
 
         //for when thing gets to thing
