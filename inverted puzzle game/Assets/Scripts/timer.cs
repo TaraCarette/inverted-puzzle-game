@@ -8,8 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour {
 
-  public int timeLeft = 60; //Seconds Overall
+  public int timeLeft; //Seconds Overall
   public Text countdown; //UI Text Object
+  public static int beginTime;
 
   private string currentScene;
 
@@ -17,10 +18,17 @@ public class timer : MonoBehaviour {
     StartCoroutine("LoseTime");
     Time.timeScale = 1; //Just making sure that the timeScale is right
 
+    beginTime = timeLeft;
+
     currentScene =  SceneManager.GetActiveScene().name;
   }
 
   void Update () {
+            if (wizardHatMovement.resetTime == true)
+            {
+                timeLeft = beginTime;
+                wizardHatMovement.resetTime = false;
+            }
         
             countdown.text = ("Time Left:" + timeLeft);
         

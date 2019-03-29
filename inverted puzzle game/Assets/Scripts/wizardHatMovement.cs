@@ -6,15 +6,28 @@ using UnityEngine.SceneManagement;
 public class wizardHatMovement : MonoBehaviour
 {
     public float speed;
+    public AudioClip hitObstacle;
+    public static bool resetTime = false;
 
     private Rigidbody2D rb2d;
     private string sceneName;
+    private AudioSource source;
+    private Vector3 originalPos;
+    // private GameObject timer;
+    // private int startTime;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sceneName =  SceneManager.GetActiveScene().name;
+
+        source = GetComponent<AudioSource>();
+        source.clip = hitObstacle;
+
+        // startTime = timer.beginTime;
+
+        originalPos = gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -55,7 +68,9 @@ public class wizardHatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
             Debug.Log("hit spike");
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            source.Play();
+            resetTime = true;
+            gameObject.transform.position = originalPos;
         }
     }
 }
