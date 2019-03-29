@@ -21,7 +21,10 @@ public class timer : MonoBehaviour {
   }
 
   void Update () {
-    countdown.text = ("Time Left:" + timeLeft); //Showing the Score on the Canvas
+        
+            countdown.text = ("Time Left:" + timeLeft);
+        
+     //Showing the Score on the Canvas
   }
 
   //Simple Coroutine
@@ -33,7 +36,7 @@ public class timer : MonoBehaviour {
 
       if (timeLeft <= 0) {
         Debug.Log("out of time");
-        SceneManager.LoadScene(currentScene, LoadSceneMode.Single);
+        finishLevel.timeFail = true;
       }
     }
   }

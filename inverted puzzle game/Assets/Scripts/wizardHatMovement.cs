@@ -48,7 +48,7 @@ public class wizardHatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Door"))
         {
             Debug.Log("reached end");
-            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+            finishLevel.wizHat = true;
 
         }
 
