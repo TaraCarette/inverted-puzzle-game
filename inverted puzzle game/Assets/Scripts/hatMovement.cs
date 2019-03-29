@@ -7,8 +7,8 @@ public class hatMovement : MonoBehaviour
 {
     public float speed;
     public AudioClip hitObstacle;
-    public GameObject wizard;
 
+    private GameObject wizard;
     private Rigidbody2D rb2d;
     private string sceneName;
     private AudioSource source;
@@ -25,6 +25,8 @@ public class hatMovement : MonoBehaviour
 
         source = GetComponent<AudioSource>();
         source.clip = hitObstacle;
+
+        wizard = GameObject.FindGameObjectsWithTag("Player")[0];
 
         originalPos = gameObject.transform.position;
         wizardOriginalPos = wizard.transform.position;
