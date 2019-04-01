@@ -40,7 +40,10 @@ public class timer : MonoBehaviour {
   {
     while (true) {
       yield return new WaitForSeconds (1);
-      timeLeft--; 
+            if (DialogueManager.talking == false)
+            {
+                timeLeft--;
+            }
 
       if (timeLeft <= 0) {
         Debug.Log("out of time");
