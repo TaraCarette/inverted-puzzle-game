@@ -17,6 +17,8 @@ public class trackEnd : MonoBehaviour
     private AudioSource source;
     private float clipLength;
 
+    private bool startToPlay = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,13 @@ public class trackEnd : MonoBehaviour
         {
             //switch to same structure scene but with obstacles
             Debug.Log("finished puzzle");
-            source.Play();
+
+            //avoid playing music more than once
+            if (!startToPlay) 
+            {
+                source.Play();
+                startToPlay = true;
+            }
             Invoke("sceneSwitch", clipLength);
         }
     }
