@@ -13,10 +13,12 @@ public class wizardMovement : MonoBehaviour
     private AudioSource source;
     private Vector3 originalPos;
     private Vector3 hatOriginalPos;
+    public static bool hit = false;
 
     // Start is called before the first frame update
     void Start()
     {
+
         rb2d = GetComponent<Rigidbody2D>();
         sceneName = SceneManager.GetActiveScene().name;
         Time.timeScale = 1f;
@@ -33,6 +35,11 @@ public class wizardMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hit == true)
+        {
+            hit = false;
+        }
+
         if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
             Movement();
@@ -72,6 +79,8 @@ public class wizardMovement : MonoBehaviour
         //for if an obstacle is hit
         if (other.gameObject.CompareTag("Spike"))
         {
+            hit = true;
+
             Debug.Log("hit spike");
             source.Play();
             gameObject.transform.position = originalPos;

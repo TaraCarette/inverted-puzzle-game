@@ -14,6 +14,8 @@ public class hatMovement : MonoBehaviour
     private Vector3 originalPos;
     private Vector3 wizardOriginalPos;
 
+    public static bool hit = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,11 @@ public class hatMovement : MonoBehaviour
 
     void Update()
     {
+        if (hit == true)
+        {
+            hit = false;
+        }
+
         if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
             Movement();
@@ -68,6 +75,7 @@ public class hatMovement : MonoBehaviour
         //for if an obstacle is hit
         if (other.gameObject.CompareTag("Spike"))
         {
+            hit = true;
             Debug.Log("hit spike");
             source.Play();
             gameObject.transform.position = originalPos;
