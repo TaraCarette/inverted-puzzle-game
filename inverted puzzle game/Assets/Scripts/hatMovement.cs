@@ -76,6 +76,7 @@ public class hatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
             hit = true;
+
             Debug.Log("hit spike");
             source.Play();
             gameObject.transform.position = originalPos;

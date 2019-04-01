@@ -1844,7 +1844,7 @@ PrefabInstance:
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: yay, we got through!
+      value: Yay, we got through!
       objectReference: {fileID: 0}
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
@@ -1856,7 +1856,7 @@ PrefabInstance:
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: my hat and i have to be quick!
+      value: My Hat and I have to be quick!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1acdbb3712abc584fa1707ca626ebfdb, type: 3}
@@ -2115,7 +2115,7 @@ PrefabInstance:
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: "Hmmm, looks like there is a door in the way of my hat.\t"
+      value: "Hmmm, looks like there is a door in the way of my Hat.\t"
       objectReference: {fileID: 0}
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
@@ -3846,11 +3846,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1800268503142491055, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3956,15 +3951,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1800268503031802494, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -459.4
-      objectReference: {fileID: 0}
     - target: {fileID: 5580918919098711185, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800268503031802494, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -459.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 495c6b399a58c134685c0ff8cda722a5, type: 3}

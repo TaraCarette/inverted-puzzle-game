@@ -2805,6 +2805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
+        type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: Well, looks like we're together again but...
       objectReference: {fileID: 0}
@@ -2816,7 +2821,12 @@ PrefabInstance:
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: ok ok... just DON'T touch the spikes.
+      value: I have to get out of here before time runs out!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Ok ok! Just DON'T hit the spikes!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1acdbb3712abc584fa1707ca626ebfdb, type: 3}
@@ -2920,26 +2930,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: pause
-      objectReference: {fileID: 0}
-    - target: {fileID: 7056222980186798123, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: death
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496841902608831026, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: victory
       objectReference: {fileID: 0}
     - target: {fileID: 1800268503142491055, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
@@ -3045,6 +3035,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056222980186798123, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496841902608831026, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: victory
       objectReference: {fileID: 0}
     - target: {fileID: 8788871495830921599, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
