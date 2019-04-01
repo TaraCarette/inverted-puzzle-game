@@ -33,7 +33,7 @@ public class wizardMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DialogueManager.talking == false)
+        if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
             Movement();
         }

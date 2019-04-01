@@ -32,7 +32,7 @@ public class hatMovement : MonoBehaviour
 
     void Update()
     {
-        if (DialogueManager.talking == false)
+        if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
             Movement();
         }

@@ -17,7 +17,7 @@ public class trackEnd : MonoBehaviour
     private AudioSource source;
     private float clipLength;
 
-    private bool startToPlay = false;
+    public static bool startToPlay = false;
 
     // Start is called before the first frame update
     void Start()
