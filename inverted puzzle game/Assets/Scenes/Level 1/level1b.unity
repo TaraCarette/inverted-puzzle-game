@@ -1462,6 +1462,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4673284861557467928, guid: 319bdcb81527ecd4a9170bd02ca4db2c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ea80f026dc1bc04fb31f1c76f9b7b84, type: 3}
     - target: {fileID: 706089177, guid: 319bdcb81527ecd4a9170bd02ca4db2c, type: 3}
       propertyPath: pause
       value: 
@@ -2805,11 +2810,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
-        type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
       value: Well, looks like we're together again but...
       objectReference: {fileID: 0}
@@ -2821,12 +2821,7 @@ PrefabInstance:
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: I have to get out of here before time runs out!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[3]
-      value: Ok ok! Just DON'T hit the spikes!
+      value: ok ok... just DON'T touch the spikes.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1acdbb3712abc584fa1707ca626ebfdb, type: 3}
@@ -3036,16 +3031,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: pause
-      objectReference: {fileID: 0}
     - target: {fileID: 7056222980186798123, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
       propertyPath: m_TagString
@@ -3055,6 +3040,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: victory
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: pause
       objectReference: {fileID: 0}
     - target: {fileID: 8788871495830921599, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
