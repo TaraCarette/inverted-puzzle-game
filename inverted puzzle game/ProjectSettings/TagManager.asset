@@ -10,6 +10,9 @@ TagManager:
   - Spike
   - isTile
   - playerHat
+  - pause
+  - death
+  - victory
   layers:
   - Default
   - TransparentFX
