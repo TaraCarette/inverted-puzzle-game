@@ -11,11 +11,15 @@ public class SwitchAction : MonoBehaviour
     public GameObject doorSwitch;
     private BoxCollider2D switchCollider;
 
+    private AudioSource source;
+
 
     // Start is called before the first frame update
     void Start()
     {
         timePause = timeWaiting;
+
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -49,6 +53,8 @@ public class SwitchAction : MonoBehaviour
         //for if an obstacle is hit
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("playerHat"))
         {
+            source.Play();
+            
             doorSwitch.GetComponent<CircleCollider2D>().enabled = false;
             door.SetActive(false);
             
