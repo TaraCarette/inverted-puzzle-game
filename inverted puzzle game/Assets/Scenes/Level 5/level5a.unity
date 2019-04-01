@@ -993,6 +993,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: musica
       objectReference: {fileID: 0}
+    - target: {fileID: 36948245441974487, guid: 84ab392cd2451fa4ebe58a501d35020a,
+        type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 1254271294}
     - target: {fileID: 7271399946565192017, guid: 84ab392cd2451fa4ebe58a501d35020a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1048,11 +1053,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 36948245441974487, guid: 84ab392cd2451fa4ebe58a501d35020a,
-        type: 3}
-      propertyPath: pause
-      value: 
-      objectReference: {fileID: 1254271294}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84ab392cd2451fa4ebe58a501d35020a, type: 3}
 --- !u!4 &445204386 stripped
@@ -1561,6 +1561,11 @@ PrefabInstance:
       propertyPath: timeWaiting
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 6452629755359950323, guid: bb21fc4e8e2e2b147bad2a0c91f15c19,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3136603781535623926, guid: bb21fc4e8e2e2b147bad2a0c91f15c19,
         type: 3}
       propertyPath: m_Color.r
@@ -1575,11 +1580,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.0990566
-      objectReference: {fileID: 0}
-    - target: {fileID: 6452629755359950323, guid: bb21fc4e8e2e2b147bad2a0c91f15c19,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb21fc4e8e2e2b147bad2a0c91f15c19, type: 3}
@@ -2508,7 +2508,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2924528, g: 0.18899073, b: 0.1919468, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -3846,6 +3846,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1800268503142491055, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3951,20 +3956,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5580918919098711185, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1800268503031802494, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -459.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5580918919098711185, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 495c6b399a58c134685c0ff8cda722a5, type: 3}
