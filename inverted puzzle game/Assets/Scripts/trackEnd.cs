@@ -14,11 +14,17 @@ public class trackEnd : MonoBehaviour
     public GameObject wizardPlayer;
     public GameObject hatPlayer;
 
+    private AudioSource source;
+    private float clipLength;
+
     // Start is called before the first frame update
     void Start()
     {
         currentScene =  SceneManager.GetActiveScene().name;
         nextLevel = currentScene.Replace("a", "b");
+
+        source = GetComponent<AudioSource>();
+        clipLength = source.clip.length;
     }
     
     // Update is called once per frame
@@ -28,8 +34,13 @@ public class trackEnd : MonoBehaviour
         {
             //switch to same structure scene but with obstacles
             Debug.Log("finished puzzle");
-            SceneManager.LoadScene(currentScene, LoadSceneMode.Single);
-            SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
+            source.Play();
+            Invoke("sceneSwitch", clipLength);
         }
+    }
+
+    void sceneSwitch()
+    {
+        SceneManager.LoadScene(nextLevel, LoadSceneMode.Single);
     }
 }

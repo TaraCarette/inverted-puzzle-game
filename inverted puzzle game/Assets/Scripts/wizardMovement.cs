@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class wizardMovement : MonoBehaviour
 {
     public float speed;
-    public AudioClip hitObstacle;
 
     private GameObject hat;
     private Rigidbody2D rb2d;
@@ -23,7 +22,6 @@ public class wizardMovement : MonoBehaviour
         Time.timeScale = 1f;
 
         source = GetComponent<AudioSource>();
-        source.clip = hitObstacle;
 
         hat = GameObject.FindGameObjectsWithTag("playerHat")[0];
 

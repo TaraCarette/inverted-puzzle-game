@@ -6,15 +6,13 @@ using UnityEngine.SceneManagement;
 public class wizardHatMovement : MonoBehaviour
 {
     public float speed;
-    public AudioClip hitObstacle;
     public static bool resetTime = false;
 
     private Rigidbody2D rb2d;
     private string sceneName;
     private AudioSource source;
     private Vector3 originalPos;
-    // private GameObject timer;
-    // private int startTime;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +21,6 @@ public class wizardHatMovement : MonoBehaviour
         sceneName =  SceneManager.GetActiveScene().name;
 
         source = GetComponent<AudioSource>();
-        source.clip = hitObstacle;
-
-        // startTime = timer.beginTime;
 
         originalPos = gameObject.transform.position;
     }
