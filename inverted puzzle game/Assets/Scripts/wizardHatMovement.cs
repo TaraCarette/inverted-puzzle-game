@@ -18,7 +18,7 @@ public class wizardHatMovement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        sceneName =  SceneManager.GetActiveScene().name;
+        sceneName = SceneManager.GetActiveScene().name;
 
         source = GetComponent<AudioSource>();
 
@@ -28,27 +28,38 @@ public class wizardHatMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow)) 
+        if (DialogueManager.talking == false)
+        {
+            Movement();
+        }
+
+    }
+
+    void Movement()
+    {
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.Translate(new Vector3(0, speed, 0) * Time.deltaTime);
+            //Debug.Log("walk up");
         }
 
-        if (Input.GetKey(KeyCode.DownArrow)) 
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.Translate(new Vector3(0, -speed, 0) * Time.deltaTime);
+            //.Log("walk down");
         }
 
-        if (Input.GetKey(KeyCode.RightArrow)) 
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(new Vector3(speed, 0, 0) * Time.deltaTime);
+            // Debug.Log("walk right");
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow)) 
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(new Vector3(-speed, 0, 0) * Time.deltaTime);
+            // Debug.Log("walk left");
         }
-
-
     }
 
     void OnTriggerEnter2D(Collider2D other)

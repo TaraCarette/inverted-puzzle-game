@@ -120,8 +120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  hitObstacle: {fileID: 8300000, guid: 45bddfd7ebcfa4bcf84b52ce89f5f128, type: 3}
-  hat: {fileID: 7246948250392378323, guid: a361688a87a0a8f4c8dd6d0e8d5a6e96, type: 3}
 --- !u!95 &7732294765662431106
 Animator:
   serializedVersion: 3
