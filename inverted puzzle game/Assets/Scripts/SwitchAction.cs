@@ -21,6 +21,13 @@ public class SwitchAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(wizardHatMovement.hit == true || hatMovement.hit == true || wizardMovement.hit == true)
+        {
+            timePause = timeWaiting;
+            door.SetActive(true);
+            doorSwitch.GetComponent<CircleCollider2D>().enabled = true;
+
+        }
         if (door.activeInHierarchy == false && timePause > 0)
         {
             timePause = timePause - 1;
