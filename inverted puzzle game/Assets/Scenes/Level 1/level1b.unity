@@ -1462,6 +1462,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4673284861557467928, guid: 319bdcb81527ecd4a9170bd02ca4db2c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ea80f026dc1bc04fb31f1c76f9b7b84, type: 3}
     - target: {fileID: 706089177, guid: 319bdcb81527ecd4a9170bd02ca4db2c, type: 3}
       propertyPath: pause
       value: 
@@ -2921,26 +2926,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: pause
-      objectReference: {fileID: 0}
-    - target: {fileID: 7056222980186798123, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: death
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496841902608831026, guid: 495c6b399a58c134685c0ff8cda722a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: victory
-      objectReference: {fileID: 0}
     - target: {fileID: 1800268503142491055, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3045,6 +3030,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056222980186798123, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496841902608831026, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: victory
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523349063916105712, guid: 495c6b399a58c134685c0ff8cda722a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: pause
       objectReference: {fileID: 0}
     - target: {fileID: 8788871495830921599, guid: 495c6b399a58c134685c0ff8cda722a5,
         type: 3}
