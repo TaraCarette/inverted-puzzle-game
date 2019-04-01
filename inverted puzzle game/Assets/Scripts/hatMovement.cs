@@ -30,30 +30,38 @@ public class hatMovement : MonoBehaviour
         wizardOriginalPos = wizard.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow)) 
+        if (DialogueManager.talking == false)
+        {
+            Movement();
+        }
+
+    }
+
+    void Movement()
+    {
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.Translate(new Vector3(0, speed, 0) * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow)) 
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.Translate(new Vector3(0, -speed, 0) * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow)) 
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(new Vector3(speed, 0, 0) * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow)) 
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(new Vector3(-speed, 0, 0) * Time.deltaTime);
         }
-
     }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -78,7 +86,7 @@ public class hatMovement : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("HatEnd")) 
+        if (other.gameObject.CompareTag("HatEnd"))
         {
             Debug.Log("hat left");
             trackEnd.hatSucess = false;

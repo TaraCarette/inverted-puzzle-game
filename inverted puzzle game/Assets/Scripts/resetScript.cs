@@ -24,12 +24,7 @@ public class resetScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPause == false)
-        {
-            resume();
-        }
-
-        else
+        if (isPause == true)
         {
             pause();
         }
