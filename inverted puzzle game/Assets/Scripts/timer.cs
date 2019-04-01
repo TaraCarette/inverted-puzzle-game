@@ -48,7 +48,7 @@ public class timer : MonoBehaviour {
                 timeLeft--;
             }
 
-      if (timeLeft <= 5) 
+      if (timeLeft <= 5 && timeLeft > 0) 
       {
           source.Play();
       }
