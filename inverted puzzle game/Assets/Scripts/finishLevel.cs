@@ -64,6 +64,9 @@ public class finishLevel : MonoBehaviour
         Time.timeScale = 1f;
         victoryUI.SetActive(false);
         wizHat = false;
+        trackEnd.wizardSucess = false;
+        trackEnd.hatSucess = false;
+        trackEnd.startToPlay = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
