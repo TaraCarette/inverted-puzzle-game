@@ -19,6 +19,8 @@ public class trackEnd : MonoBehaviour
 
     public static bool startToPlay = false;
 
+    public PauseMusic pauseScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,7 @@ public class trackEnd : MonoBehaviour
             //avoid playing music more than once
             if (!startToPlay) 
             {
+                pauseScript.stopMusic();
                 source.Play();
                 startToPlay = true;
             }

@@ -2,29 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class notMenu : MonoBehaviour
+public class PauseMusic : MonoBehaviour
 {
     private AudioSource source;
     private bool currentlyPaused = false;
 
     public GameObject pause;
-    public GameObject victory;
-    public GameObject death;
-
-
     // Start is called before the first frame update
     void Start()
     {
         source = GetComponent<AudioSource>();
 
         source.Play();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!currentlyPaused && (pause.activeSelf))
+        if (!currentlyPaused && pause.activeSelf) 
         {
             Debug.Log("pause music");
             source.Pause();
@@ -37,11 +32,11 @@ public class notMenu : MonoBehaviour
             source.Play();
             currentlyPaused = false;
         }
+    }
 
-        if (victory.activeSelf || death.activeSelf) 
-        {
-            source.Pause();
-            currentlyPaused = false; //want music to never be able to start again
-        }
+    public void stopMusic()
+    {
+        Debug.Log("Stop music");
+        source.Pause();
     }
 }
