@@ -12,11 +12,14 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> sentences;
+    private AudioSource source;
     
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
+
+        source = GetComponent<AudioSource>();
     }
 
    public void StartDialogue(Dialogue dialogue)
@@ -40,6 +43,8 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        source.Play();
+        
         if (sentences.Count == 0)
         {
             EndDialogue();

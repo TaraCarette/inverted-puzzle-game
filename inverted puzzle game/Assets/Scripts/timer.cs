@@ -13,12 +13,15 @@ public class timer : MonoBehaviour {
   public static int beginTime;
 
   private string currentScene;
+  private AudioSource source;
 
   void Start () {
     StartCoroutine("LoseTime");
     Time.timeScale = 1; //Just making sure that the timeScale is right
 
     beginTime = timeLeft;
+
+    source = GetComponent<AudioSource>();
 
     currentScene =  SceneManager.GetActiveScene().name;
   }
@@ -41,6 +44,11 @@ public class timer : MonoBehaviour {
     while (true) {
       yield return new WaitForSeconds (1);
       timeLeft--; 
+
+      if (timeLeft <= 5) 
+      {
+          source.Play();
+      }
 
       if (timeLeft <= 0) {
         Debug.Log("out of time");
