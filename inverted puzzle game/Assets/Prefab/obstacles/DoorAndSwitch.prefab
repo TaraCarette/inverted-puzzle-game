@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3136603780196515431}
   - component: {fileID: 3136603780196515428}
-  - component: {fileID: 3136603780196515430}
+  - component: {fileID: 4183378923746404536}
   - component: {fileID: 6452629755359950323}
   - component: {fileID: 1417371998808927477}
   m_Layer: 10
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3136603780196515416}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3, y: 1.7, z: 0}
-  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
+  m_LocalPosition: {x: -1.78, y: 2.61, z: 0}
+  m_LocalScale: {x: 0.055037245, y: 0.056700416, z: 0.02750487}
   m_Children: []
   m_Father: {fileID: 3136603782053881729}
   m_RootOrder: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3136603780196515430
+--- !u!114 &4183378923746404536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,12 +91,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3136603780196515416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038d122b27f302d4596947b99b6fb23a, type: 3}
+  m_Script: {fileID: 11500000, guid: 09392ce10b087d14aaac8be89615937d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeWaiting: 200
-  door: {fileID: 3136603781535623913}
-  doorSwitch: {fileID: 3136603780196515416}
+  myScript: {fileID: 2136841919}
 --- !u!58 &6452629755359950323
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -235,13 +233,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3136603781535623913}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.3, y: 0.9, z: 0}
-  m_LocalScale: {x: 0.7993805, y: 0.5573959, z: 0.384}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 6.9, y: 5.48, z: 0}
+  m_LocalScale: {x: 0.11183613, y: 0.101868555, z: 0.115200005}
   m_Children: []
   m_Father: {fileID: 3136603782053881729}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &3136603781535623926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -280,7 +278,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 76a283306307cc443ba6c6646c256d71, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.051886797, b: 0.051886797, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -421,9 +419,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3136603782053881729}
+  - component: {fileID: 2136841919}
   m_Layer: 0
   m_Name: DoorAndSwitch
-  m_TagString: Untagged
+  m_TagString: switch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -444,3 +443,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136841919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3136603782053881730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038d122b27f302d4596947b99b6fb23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeWaiting: 4
+  door: {fileID: 3136603781535623913}
+  doorSwitch: {fileID: 3136603780196515416}
+  triggered: 0

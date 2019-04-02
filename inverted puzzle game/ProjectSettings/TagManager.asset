@@ -13,6 +13,7 @@ TagManager:
   - pause
   - death
   - victory
+  - switch
   layers:
   - Default
   - TransparentFX

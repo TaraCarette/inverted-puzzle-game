@@ -5,7 +5,6 @@ using UnityEngine;
 public class SwitchAction : MonoBehaviour
 {
     public int timeWaiting; // make it easier to adjust time
-    // private int timePause;
 
     public GameObject door;
     public GameObject doorSwitch;
@@ -14,7 +13,7 @@ public class SwitchAction : MonoBehaviour
     private AudioSource source;
     private AudioSource doorSource;
 
-    public static bool hit;
+    public bool hit;
     public bool triggered = false;
 
 
@@ -22,7 +21,7 @@ public class SwitchAction : MonoBehaviour
     void Start()
     {
         hit = false;
-        source = GetComponent<AudioSource>();
+        source = doorSwitch.GetComponent<AudioSource>();
 
         doorSource = door.GetComponent<AudioSource>();
     }
@@ -41,8 +40,8 @@ public class SwitchAction : MonoBehaviour
 
     void gotHit()
     {
-        this.door.SetActive(true);
-        this.doorSwitch.GetComponent<CircleCollider2D>().enabled = true;
+        door.SetActive(true);
+        doorSwitch.GetComponent<CircleCollider2D>().enabled = true;
         hit = false;
         Debug.Log("IM HIT");
 
@@ -54,8 +53,8 @@ public class SwitchAction : MonoBehaviour
         //if already reactivated from death, do nothing
         if (door.activeSelf == false) 
         {
-            this.door.SetActive(true);
-            this.doorSwitch.GetComponent<CircleCollider2D>().enabled = true; 
+            door.SetActive(true);
+            doorSwitch.GetComponent<CircleCollider2D>().enabled = true; 
             doorSource.Play();
 
         }
@@ -63,7 +62,7 @@ public class SwitchAction : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void TriggeredEnter(Collider2D other)
     {
         if (!triggered) 
         {
@@ -72,8 +71,8 @@ public class SwitchAction : MonoBehaviour
             {
                 source.Play();
                 
-                this.doorSwitch.GetComponent<CircleCollider2D>().enabled = false;
-                this.door.SetActive(false);
+                doorSwitch.GetComponent<CircleCollider2D>().enabled = false;
+                door.SetActive(false);
 
                 Debug.Log("I'm here");
                 triggered = true;

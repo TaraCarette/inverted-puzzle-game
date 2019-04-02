@@ -14,6 +14,7 @@ public class hatMovement : MonoBehaviour
     private Vector3 originalPos;
     private Vector3 wizardOriginalPos;
 
+    private GameObject[] doorsAndSwitches;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,8 @@ public class hatMovement : MonoBehaviour
 
         originalPos = gameObject.transform.position;
         wizardOriginalPos = wizard.transform.position;
+
+        doorsAndSwitches = GameObject.FindGameObjectsWithTag("switch");
     }
 
     void Update()
@@ -70,8 +73,11 @@ public class hatMovement : MonoBehaviour
         //for if an obstacle is hit
         if (other.gameObject.CompareTag("Spike"))
         {
-
-            SwitchAction.hit = true;
+            foreach (GameObject door in doorsAndSwitches) 
+            {
+                Debug.Log("hitting");
+                door.GetComponent<SwitchAction>().hit = true;
+            }
 
             Debug.Log("hit spike");
             source.Play();

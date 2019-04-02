@@ -12,7 +12,7 @@ public class wizardHatMovement : MonoBehaviour
     private string sceneName;
     private AudioSource source;
     private Vector3 originalPos;
-    //public static bool hit = false;
+    private GameObject[] doorsAndSwitches;
 
 
     // Start is called before the first frame update
@@ -25,6 +25,8 @@ public class wizardHatMovement : MonoBehaviour
         source = GetComponent<AudioSource>();
 
         originalPos = gameObject.transform.position;
+
+        doorsAndSwitches = GameObject.FindGameObjectsWithTag("switch");
     }
 
     // Update is called once per frame
@@ -76,7 +78,11 @@ public class wizardHatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
 
-            SwitchAction.hit = true;
+            foreach (GameObject door in doorsAndSwitches) 
+            {
+                Debug.Log("hitting");
+                door.GetComponent<SwitchAction>().hit = true;
+            }
 
             Debug.Log("hit spike");
             source.Play();
