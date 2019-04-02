@@ -889,16 +889,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7271399946565192019, guid: 84ab392cd2451fa4ebe58a501d35020a,
-        type: 3}
-      propertyPath: m_Name
-      value: musica
-      objectReference: {fileID: 0}
     - target: {fileID: 36948245441974487, guid: 84ab392cd2451fa4ebe58a501d35020a,
         type: 3}
       propertyPath: pause
       value: 
       objectReference: {fileID: 2110873147}
+    - target: {fileID: 7271399946565192019, guid: 84ab392cd2451fa4ebe58a501d35020a,
+        type: 3}
+      propertyPath: m_Name
+      value: musica
+      objectReference: {fileID: 0}
     - target: {fileID: 7271399946565192017, guid: 84ab392cd2451fa4ebe58a501d35020a,
         type: 3}
       propertyPath: m_LocalPosition.x

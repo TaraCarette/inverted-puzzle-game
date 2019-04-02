@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class hatMovement : MonoBehaviour
 {
     public float speed;
-
+    private object SwitchScript = new object();
     private GameObject wizard;
     private Rigidbody2D rb2d;
     private string sceneName;
@@ -14,12 +15,13 @@ public class hatMovement : MonoBehaviour
     private Vector3 originalPos;
     private Vector3 wizardOriginalPos;
 
-    public static bool hit = false;
+    //public static bool hit = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
+
         rb2d = GetComponent<Rigidbody2D>();
         sceneName = SceneManager.GetActiveScene().name;
         Time.timeScale = 1f;
@@ -34,10 +36,10 @@ public class hatMovement : MonoBehaviour
 
     void Update()
     {
-        if (hit == true)
-        {
-            hit = false;
-        }
+        //if (hit == true)
+        //{
+//            hit = false;
+  //      }
 
         if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
@@ -75,7 +77,9 @@ public class hatMovement : MonoBehaviour
         //for if an obstacle is hit
         if (other.gameObject.CompareTag("Spike"))
         {
-            hit = true;
+
+            //SwitchAction.Reset();
+            SwitchAction.hit = true;
 
             Debug.Log("hit spike");
             source.Play();

@@ -13,7 +13,8 @@ public class wizardMovement : MonoBehaviour
     private AudioSource source;
     private Vector3 originalPos;
     private Vector3 hatOriginalPos;
-    public static bool hit = false;
+
+    //public static bool hit = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +36,10 @@ public class wizardMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hit == true)
-        {
-            hit = false;
-        }
+        //if (hit == true)
+        //{
+         //   hit = false;
+        //}
 
         if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
@@ -79,7 +80,8 @@ public class wizardMovement : MonoBehaviour
         //for if an obstacle is hit
         if (other.gameObject.CompareTag("Spike"))
         {
-            hit = true;
+            SwitchAction.hit = true;
+            //SwitchAction.Reset();
 
             Debug.Log("hit spike");
             source.Play();

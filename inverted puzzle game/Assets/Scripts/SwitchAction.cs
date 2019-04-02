@@ -13,38 +13,58 @@ public class SwitchAction : MonoBehaviour
 
     private AudioSource source;
 
+    public static bool hit;
+
 
     // Start is called before the first frame update
     void Start()
     {
         timePause = timeWaiting;
-
+        hit = false;
         source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(wizardHatMovement.hit == true || hatMovement.hit == true || wizardMovement.hit == true)
+        if (hit == true)
         {
-            timePause = timeWaiting;
-            door.SetActive(true);
-            doorSwitch.GetComponent<CircleCollider2D>().enabled = true;
-
-        }
-        if (door.activeInHierarchy == false && timePause > 0)
-        {
-            timePause = timePause - 1;
-            
-            
+            this.timePause = 0;
         }
 
-       if (timePause == 0)
-       {
-          door.SetActive(true);
-          timePause = timeWaiting;
-          doorSwitch.GetComponent<CircleCollider2D>().enabled = true;
+        if (this.timePause == 0)
+        {
+            this.Reset();
+
         }
+
+        if ((this.door.activeInHierarchy == false) && (this.timePause > 0))
+        {
+            GoingDown();
+            
+        }
+
+ 
+    }
+
+    void Reset()
+    {
+        this.door.SetActive(true);
+        this.timePause = timeWaiting;
+        this.doorSwitch.GetComponent<CircleCollider2D>().enabled = true;
+
+        if (hit == true)
+        {
+            hit = false;
+            Debug.Log("IM HIT");
+        }
+
+    }
+
+    void GoingDown()
+    {
+        this.timePause = timePause - 1;
+        Debug.Log("GOING DOWN");
     }
 
 
@@ -55,15 +75,13 @@ public class SwitchAction : MonoBehaviour
         {
             source.Play();
             
-            doorSwitch.GetComponent<CircleCollider2D>().enabled = false;
-            door.SetActive(false);
+            this.doorSwitch.GetComponent<CircleCollider2D>().enabled = false;
+            this.door.SetActive(false);
             
         }
 
         
     }
-
-
 
 
 }
