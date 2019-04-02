@@ -7,15 +7,12 @@ using UnityEngine.SceneManagement;
 public class hatMovement : MonoBehaviour
 {
     public float speed;
-    private object SwitchScript = new object();
     private GameObject wizard;
     private Rigidbody2D rb2d;
     private string sceneName;
     private AudioSource source;
     private Vector3 originalPos;
     private Vector3 wizardOriginalPos;
-
-    //public static bool hit = false;
 
 
     // Start is called before the first frame update
@@ -36,10 +33,6 @@ public class hatMovement : MonoBehaviour
 
     void Update()
     {
-        //if (hit == true)
-        //{
-//            hit = false;
-  //      }
 
         if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
@@ -78,7 +71,6 @@ public class hatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
 
-            //SwitchAction.Reset();
             SwitchAction.hit = true;
 
             Debug.Log("hit spike");

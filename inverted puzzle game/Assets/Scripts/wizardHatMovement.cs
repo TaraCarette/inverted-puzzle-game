@@ -30,11 +30,6 @@ public class wizardHatMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (hit == true)
-        //{
-         //   hit = false;
-        //}
-
         if (DialogueManager.talking == false)
         {
             Movement();
@@ -81,7 +76,6 @@ public class wizardHatMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Spike"))
         {
 
-            //SwitchAction.Reset();
             SwitchAction.hit = true;
 
             Debug.Log("hit spike");
