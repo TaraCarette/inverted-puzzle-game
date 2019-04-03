@@ -52,6 +52,8 @@ public class resetScript : MonoBehaviour
     {
         trackEnd.wizardSucess = false;
         trackEnd.hatSucess = false;
+        trackEnd.startToPlay = false;
+        DialogueManager.talking = false;
         Time.timeScale = 1f;
         isPause = false;
         SceneManager.LoadScene(preScene, LoadSceneMode.Single);

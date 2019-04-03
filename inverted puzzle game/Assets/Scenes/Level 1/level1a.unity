@@ -3652,7 +3652,12 @@ PrefabInstance:
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: (Press the Arrow Keys to Move)
+      value: (Press the Arrow Keys to move)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Hmmm, maybe if I try...this!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1acdbb3712abc584fa1707ca626ebfdb, type: 3}
