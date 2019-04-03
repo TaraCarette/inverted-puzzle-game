@@ -15,7 +15,6 @@ public class wizardMovement : MonoBehaviour
     private Vector3 hatOriginalPos;
     private GameObject[] doorsAndSwitches;
 
-    private bool triggered = false;
 
 
     // Start is called before the first frame update
@@ -40,7 +39,6 @@ public class wizardMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (DialogueManager.talking == false && trackEnd.startToPlay == false)
         {
             Movement();
@@ -77,33 +75,29 @@ public class wizardMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!triggered) 
+        //for if an obstacle is hit
+        if (other.gameObject.CompareTag("Spike"))
         {
-            //for if an obstacle is hit
-            if (other.gameObject.CompareTag("Spike"))
+            foreach (GameObject door in doorsAndSwitches) 
             {
-                foreach (GameObject door in doorsAndSwitches) 
-                {
-                    Debug.Log("hitting");
-                    door.GetComponent<SwitchAction>().hit = true;
-                }
-
-                Debug.Log("hit spike");
-                source.Play();
-                gameObject.transform.position = originalPos;
-                hat.transform.position = hatOriginalPos;
+                Debug.Log("hitting");
+                door.GetComponent<SwitchAction>().hit = true;
             }
 
-            //for reaching the spots needed
-            if (other.gameObject.CompareTag("WizardEnd"))
-            {
-                Debug.Log("wizard got here!");
-                trackEnd.wizardSucess = true;
-
-            }
-
-            triggered = true;            
+            Debug.Log("hit spike");
+            source.Play();
+            gameObject.transform.position = originalPos;
+            hat.transform.position = hatOriginalPos;
         }
+
+        //for reaching the spots needed
+        if (other.gameObject.CompareTag("WizardEnd"))
+        {
+            Debug.Log("wizard got here!");
+            trackEnd.wizardSucess = true;
+
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -112,7 +106,6 @@ public class wizardMovement : MonoBehaviour
         {
             Debug.Log("wizard left");
             trackEnd.wizardSucess = false;
-            triggered = false; //once left, can trigger entrance again
         }
     }
 
