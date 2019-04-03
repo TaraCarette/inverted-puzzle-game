@@ -34,14 +34,14 @@ public class MainMenu : MonoBehaviour
 
     public void LoadLevel4()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(7);
     }
     public void LoadLevel5()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(9);
     }
     public void LoadLevel6()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(11);
     }
 }
