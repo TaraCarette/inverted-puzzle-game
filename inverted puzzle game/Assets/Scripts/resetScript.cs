@@ -62,6 +62,12 @@ public class resetScript : MonoBehaviour
 
     public void menu()
     {
+        trackEnd.wizardSucess = false;
+        trackEnd.hatSucess = false;
+        trackEnd.startToPlay = false;
+        DialogueManager.talking = false;
+        Time.timeScale = 1f;
+        isPause = false;
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 
