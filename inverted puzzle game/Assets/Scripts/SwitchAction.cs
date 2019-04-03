@@ -15,6 +15,7 @@ public class SwitchAction : MonoBehaviour
 
     public bool hit;
     public bool triggered = false;
+    public static bool darken;
 
 
     // Start is called before the first frame update
@@ -29,6 +30,8 @@ public class SwitchAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        darken = triggered;
+
         if (hit == true)
         {
             gotHit();
