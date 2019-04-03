@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!68 &7774756371230609329
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4518782420731485467}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 5.144102, y: -1.4717674}
+  - {x: -5.950642, y: -1.5516492}
+  - {x: -0.38858503, y: 6.1505904}
+  - {x: 5.2138243, y: -1.5346526}
 --- !u!1001 &6984402095000362277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,8 +107,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2584
       objectReference: {fileID: 0}
+    - target: {fileID: 533705093805701854, guid: 5d6f8614360ddd34eaf51647d0a65aef,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d6f8614360ddd34eaf51647d0a65aef, type: 3}
+--- !u!1 &4518782420731485467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6798293695449219134, guid: 5d6f8614360ddd34eaf51647d0a65aef,
+    type: 3}
+  m_PrefabInstance: {fileID: 6984402095000362277}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6984402095763415483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 3514927295077804365, guid: 74a2a88936bfc9f4eb6c7dce834a324d,
         type: 3}
       propertyPath: m_Name
-      value: goalHat
+      value: goalHat Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3514927295077804366, guid: 74a2a88936bfc9f4eb6c7dce834a324d,
         type: 3}

@@ -82,6 +82,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.26928002
       objectReference: {fileID: 0}
+    - target: {fileID: 533705093805701854, guid: 5d6f8614360ddd34eaf51647d0a65aef,
+        type: 3}
+      propertyPath: m_Radius
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d6f8614360ddd34eaf51647d0a65aef, type: 3}
 --- !u!1001 &8057967566219624287
@@ -94,7 +99,7 @@ PrefabInstance:
     - target: {fileID: 999519212558101269, guid: 24c059d1ebbc5124c8810c2e36477d41,
         type: 3}
       propertyPath: m_Name
-      value: goalWizard
+      value: goalWizard Variant
       objectReference: {fileID: 0}
     - target: {fileID: 999519212558101264, guid: 24c059d1ebbc5124c8810c2e36477d41,
         type: 3}
