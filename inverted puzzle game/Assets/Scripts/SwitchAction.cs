@@ -47,6 +47,7 @@ public class SwitchAction : MonoBehaviour
         door.SetActive(true);
         doorSwitch.GetComponent<CircleCollider2D>().enabled = true;
         hit = false;
+        buttonRend.material.color = Color.white;
         Debug.Log("IM HIT");
 
     }
