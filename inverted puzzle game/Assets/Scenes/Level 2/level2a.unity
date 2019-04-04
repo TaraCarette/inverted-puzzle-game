@@ -1854,9 +1854,7 @@ PrefabInstance:
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: 'Though it looks like the door reappears after a few
-
-        seconds...'
+      value: Though it looks like the door reappears after a few seconds...
       objectReference: {fileID: 0}
     - target: {fileID: 4407068116536857669, guid: 1acdbb3712abc584fa1707ca626ebfdb,
         type: 3}
@@ -4651,6 +4649,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136841919, guid: bb21fc4e8e2e2b147bad2a0c91f15c19, type: 3}
+      propertyPath: timeWaiting
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb21fc4e8e2e2b147bad2a0c91f15c19, type: 3}
