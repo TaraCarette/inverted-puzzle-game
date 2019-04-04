@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6452629755359950323}
   - component: {fileID: 1417371998808927477}
   - component: {fileID: 5465053227501622283}
-  - component: {fileID: 2471182141264132025}
   m_Layer: 10
   m_Name: doorSwitch
   m_TagString: Untagged
@@ -224,18 +223,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &2471182141264132025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3136603780196515416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 039c5ebb34eac044ca3cedbb3c3fe70f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3136603781535623913
 GameObject:
   m_ObjectHideFlags: 0

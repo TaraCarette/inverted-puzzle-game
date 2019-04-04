@@ -47,6 +47,8 @@ public class trackEnd : MonoBehaviour
                 startToPlay = true;
             }
             Invoke("sceneSwitch", clipLength);
+            wizardSucess = false;
+            hatSucess = false;
         }
     }
 

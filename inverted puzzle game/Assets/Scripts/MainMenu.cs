@@ -19,29 +19,35 @@ public class MainMenu : MonoBehaviour
 
     public void LoadLevel1()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("level1a", LoadSceneMode.Single);
+        //SceneManager.LoadScene(1);
     }
 
     public void LoadLevel2()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("level2a", LoadSceneMode.Single);
+        //SceneManager.LoadScene(3);
     }
 
     public void LoadLevel3()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("level3a", LoadSceneMode.Single);
+        //SceneManager.LoadScene(5);
     }
 
     public void LoadLevel4()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene("level4a", LoadSceneMode.Single);
+        //SceneManager.LoadScene(7);
     }
     public void LoadLevel5()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene("level5a", LoadSceneMode.Single);
+        //SceneManager.LoadScene(9);
     }
     public void LoadLevel6()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene("level6a", LoadSceneMode.Single);
+        // SceneManager.LoadScene(11);
     }
 }

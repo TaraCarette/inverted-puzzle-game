@@ -69,4 +69,12 @@ public class finishLevel : MonoBehaviour
         trackEnd.startToPlay = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void menu()
+    {
+        victoryUI.SetActive(false);
+        deathUI.SetActive(false);
+        wizHat = false;
+        timeFail = false;
+    }
 }

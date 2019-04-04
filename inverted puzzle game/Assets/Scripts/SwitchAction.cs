@@ -16,6 +16,7 @@ public class SwitchAction : MonoBehaviour
     public bool hit;
     public bool triggered = false;
     public static bool darken;
+    Renderer buttonRend;
 
 
     // Start is called before the first frame update
@@ -25,12 +26,12 @@ public class SwitchAction : MonoBehaviour
         source = doorSwitch.GetComponent<AudioSource>();
 
         doorSource = door.GetComponent<AudioSource>();
+        buttonRend = doorSwitch.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        darken = triggered;
 
         if (hit == true)
         {
@@ -59,6 +60,7 @@ public class SwitchAction : MonoBehaviour
             door.SetActive(true);
             doorSwitch.GetComponent<CircleCollider2D>().enabled = true; 
             doorSource.Play();
+            buttonRend.material.color = Color.white;
 
         }
         triggered = false;
@@ -76,6 +78,7 @@ public class SwitchAction : MonoBehaviour
                 
                 doorSwitch.GetComponent<CircleCollider2D>().enabled = false;
                 door.SetActive(false);
+                buttonRend.material.color = Color.gray;
 
                 Debug.Log("I'm here");
                 triggered = true;
