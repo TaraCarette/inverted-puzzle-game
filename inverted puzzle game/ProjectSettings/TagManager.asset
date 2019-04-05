@@ -57,6 +57,9 @@ TagManager:
   - name: glow
     uniqueID: 303940075
     locked: 0
+  - name: button
+    uniqueID: 104564621
+    locked: 0
   - name: Obstacle
     uniqueID: 2995099911
     locked: 0
