@@ -22,6 +22,14 @@ public class DialogueManager : MonoBehaviour
         source = GetComponent<AudioSource>();
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            DisplayNextSentence();
+        }
+    }
+
    public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("isOpen", true);
